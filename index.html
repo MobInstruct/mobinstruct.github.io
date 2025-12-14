@@ -1,12 +1,56 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>My Awesome Tool - 强大的开发工具</title>
-    <meta name="description" content="一个简单易用的开发工具">
+  <meta charset="utf-8" />
+  <title>PartInstruct</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>My Awesome Tool</h1>
-    <p>这是项目的官方主页，完全独立于个人身份。</p>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Hero -->
+  <section class="flex items-center justify-center h-96 bg-gradient-to-r from-cyan-50 to-teal-50">
+    <div class="text-center px-6">
+      <h1 class="text-5xl font-extrabold text-teal-600">PartInstruct</h1>
+      <p class="mt-4 text-lg text-gray-600">A Large-Scale Dataset for Part-Aware Instruction Following</p>
+      <a href="https://github.com/PartInstruct/PartInstruct" class="inline-block mt-6 px-6 py-3 bg-teal-500 text-white rounded-lg shadow hover:bg-teal-600 transition">GitHub</a>
+    </div>
+  </section>
+
+  <!-- Highlights -->
+  <section class="max-w-6xl mx-auto px-6 py-12">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold text-teal-600">1M+ Instruction Samples</h3>
+        <p class="mt-2 text-gray-600">Large-scale and diverse part-aware instructions.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold text-teal-600">Part-Aware Evaluation</h3>
+        <p class="mt-2 text-gray-600">Benchmark for fine-grained instruction following.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6">
+        <h3 class="text-xl font-semibold text-teal-600">Easy-to-Use API</h3>
+        <p class="mt-2 text-gray-600">Load and train with minimal code change.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abstract -->
+  <section class="bg-white">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+      <h2 class="text-3xl font-bold mb-4">Abstract</h2>
+      <p class="text-gray-700 leading-relaxed">
+        PartInstruct is a large-scale dataset designed to boost multi-modal models' ability to follow
+        fine-grained, part-aware instructions. It contains over 1 million instruction-response pairs
+        covering 80+ object categories and 700+ part types, and introduces a new benchmark for
+        evaluating part-level instruction following. Extensive experiments show that models trained
+        on PartInstruct achieve superior performance on part detection, grounding and reasoning tasks.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-gray-500 text-sm">
+    © 2024 PartInstruct Team. All rights reserved.
+  </footer>
 </body>
 </html>
